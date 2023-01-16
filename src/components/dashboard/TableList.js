@@ -44,6 +44,10 @@ function TableList({ data, ...props }) {
                             <td className="border-b-2 p-4 dark:border-dark-5 min-w-min w-40">
                                 <Button
                                     color='yellow'
+                                    value={item.id}
+                                    onClick={() => {
+                                        props.getAllData(item)
+                                    }}
                                 >
                                     Detail
                                 </Button>
