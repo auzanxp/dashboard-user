@@ -12,6 +12,7 @@ export default function Button({ children, color, ...props }) {
 
     if (color === 'red') clasName.push(' bg-red-600  hover:bg-red-700');
 
+    if (props.isBlock) clasName.push(' w-full');
     props.isLarge ? clasName.push(' py-2 px-4') : clasName.push(' py-1 px-3');
 
     if (props.type === 'link') {
@@ -25,6 +26,7 @@ export default function Button({ children, color, ...props }) {
             <button
                 onClick={props.onClick}
                 type={props.type}
+                disabled={props.disabled}
                 className={`${clasName.join('')} gap-x-2 [&>svg]:w-5 [&>svg]:h-5`}
             >
                 {children}
