@@ -36,7 +36,7 @@ function ListTableData() {
             <div className="w-full overflow-x-scroll">
                 <TableList data={datas} getAllData={getAllData} />
                 {
-                    openModal &&
+                    openModal && (
                     <div className='fixed z-[999] pt-[250px] w-full h-full overflow-auto bg-opacity-30 bg-slate-600 left-0 top-0'>
                         <Card>
                             <Card.Title>
@@ -57,7 +57,7 @@ function ListTableData() {
                             </Card.Footer>
                         </Card>
                     </div>
-                }
+                )}
             </div>
         </>
     )

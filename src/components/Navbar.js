@@ -7,7 +7,6 @@ import NavItem from '../elements/NavItem';
 import DropDown from './Dropdown';
 
 function Navbar(props) {
-
     const [user, setUser] = useState(null);
 
     useEffect(() => {

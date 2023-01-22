@@ -8,7 +8,6 @@ import Input from '../elements/Input';
 import Label from '../elements/Label';
 import Alert from '../elements//Alert';
 
-
 const initInput = {
     userid: '',
     password: '',
@@ -19,7 +18,6 @@ const initStateAlert = {
     type: '',
     message: '',
 };
-
 
 export default function Login() {
     const [input, setInput] = useState(initInput);
@@ -57,7 +55,7 @@ export default function Login() {
             setAppearAlert({
                 appear: true,
                 type: 'success',
-                message: 'Berhasim Login!',
+                message: 'Berhasil Login!',
             });
             navigate('/dashboard');
         } catch (error) {
@@ -84,8 +82,8 @@ export default function Login() {
                 type: '',
                 message: '',
             });
-        }, 7000);
-    }, [setAppearAlert]);
+        }, 30000);
+    }, [isLoading]);
 
     return (
         <div className="relative flex items-center justify-center min-h-screen dark:bg-gradient-to-tr dark:from-gray-900 dark:to-slate-800">

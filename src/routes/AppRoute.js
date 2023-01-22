@@ -42,7 +42,6 @@ const AppRoute = () => {
                     </RouteLogin>
                 } />
             </Routes>
-
         </BrowserRouter>
     )
 }
