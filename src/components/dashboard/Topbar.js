@@ -17,8 +17,8 @@ function Topbar({ handleClick }) {
         if (user === null) {
             setUser(Cookies.get('user'))
         }
-    })
-
+    }, [user])
+    
     return (
         <div className="flex items-center justify-between px-5 py-3 mr-5 text-gray-800 rounded-lg dark:text-gray-100 bg-gray-50 dark:bg-gray-800">
             <div className="flex items-center gap-x-3">
