@@ -10,13 +10,13 @@ import Alert from '../elements//Alert';
 
 const initInput = {
     userid: '',
-    password: '',
+    password: ''
 };
 
 const initStateAlert = {
     appear: false,
     type: '',
-    message: '',
+    message: ''
 };
 
 export default function Login() {

@@ -5,6 +5,7 @@ import Dashboard from '../pages/Dashboard';
 import Home from '../pages/Home';
 import ListTableData from '../pages/ListTableData';
 import Login from '../pages/Login';
+import NotFound from '../pages/NotFound';
 import RouteDashboard from './RouteDashboard';
 import RouteLogin from './RouteLogin';
 
@@ -41,6 +42,8 @@ const AppRoute = () => {
                         </Navbar>
                     </RouteLogin>
                 } />
+
+                <Route path='*' element={ <NotFound/> } />
             </Routes>
         </BrowserRouter>
     )
