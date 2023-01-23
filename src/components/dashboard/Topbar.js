@@ -26,7 +26,7 @@ function Topbar({ handleClick }) {
                     className="w-5 h-5 transition duration-200 cursor-pointer hover:text-amber-500"
                     onClick={() => handleClick()}
                 />
-                <h2 className="invisible text-lg font-medium capitalize sm:visible">{pageName} Page</h2>
+                <h2 className="hidden text-lg font-medium capitalize sm:block">{pageName} Page</h2>
             </div>
             <div className="flex items-center justify-center space-x-2">
                 <NavLink href={'/'}>Beranda</NavLink>
