@@ -4,32 +4,32 @@ import Button from '../../elements/Button';
 
 function TableList({ data, ...props }) {
     return (
-        <div className='flex justify-center items-center'>
-            <table className="table bg-white dark:bg-gray-700 shadow rounded-lg ">
+        <div className='flex lg:items-center lg:justify-center'>
+            <table className="table bg-white rounded-lg shadow dark:bg-gray-700 ">
                 <thead>
                     <tr className="text-xs">
-                        <th className="border-b-2 p-4 dark:border-dark-5 whitespace-nowrap font-medium uppercase text-gray-900 dark:text-gray-100">
+                        <th className="p-4 font-medium text-gray-900 uppercase border-b-2 dark:border-dark-5 whitespace-nowrap dark:text-gray-100">
                             No.
                         </th>
-                        <th className="border-b-2 p-4 dark:border-dark-5 whitespace-nowrap font-medium uppercase text-gray-900 dark:text-gray-100">
+                        <th className="p-4 font-medium text-gray-900 uppercase border-b-2 dark:border-dark-5 whitespace-nowrap dark:text-gray-100">
                             Action
                         </th>
-                        <th className="border-b-2 p-4 dark:border-dark-5 whitespace-nowrap font-medium uppercase text-gray-900 dark:text-gray-100">
+                        <th className="p-4 font-medium text-gray-900 uppercase border-b-2 dark:border-dark-5 whitespace-nowrap dark:text-gray-100">
                             name
                         </th>
-                        <th className="border-b-2 p-4 dark:border-dark-5 whitespace-nowrap font-medium uppercase text-gray-900 dark:text-gray-100">
+                        <th className="p-4 font-medium text-gray-900 uppercase border-b-2 dark:border-dark-5 whitespace-nowrap dark:text-gray-100">
                             username
                         </th>
-                        <th className="border-b-2 p-4 dark:border-dark-5 whitespace-nowrap font-medium uppercase text-gray-900 dark:text-gray-100">
+                        <th className="p-4 font-medium text-gray-900 uppercase border-b-2 dark:border-dark-5 whitespace-nowrap dark:text-gray-100">
                             email
                         </th>
-                        <th className="border-b-2 p-4 dark:border-dark-5 whitespace-nowrap font-medium uppercase text-gray-900 dark:text-gray-100">
+                        <th className="p-4 font-medium text-gray-900 uppercase border-b-2 dark:border-dark-5 whitespace-nowrap dark:text-gray-100">
                             phone
                         </th>
-                        <th className="border-b-2 p-4 dark:border-dark-5 whitespace-nowrap font-medium uppercase text-gray-900 dark:text-gray-100">
+                        <th className="p-4 font-medium text-gray-900 uppercase border-b-2 dark:border-dark-5 whitespace-nowrap dark:text-gray-100">
                             company
                         </th>
-                        <th className="border-b-2 p-4 dark:border-dark-5 whitespace-nowrap font-medium uppercase text-gray-900 dark:text-gray-100">
+                        <th className="p-4 font-medium text-gray-900 uppercase border-b-2 dark:border-dark-5 whitespace-nowrap dark:text-gray-100">
                             Website
                         </th>
                     </tr>
@@ -37,11 +37,11 @@ function TableList({ data, ...props }) {
                 <tbody>
                     {data !== null && data.map((item, i) => (
                         <tr
-                            className="text-gray-700 dark:text-gray-100 text-xs"
+                            className="text-xs text-gray-700 dark:text-gray-100"
                             key={item.id}
                         >
-                            <td className="border-b-2 p-4 dark:border-dark-5">{i + 1}</td>
-                            <td className="border-b-2 p-4 dark:border-dark-5 min-w-min w-40">
+                            <td className="p-4 border-b-2 dark:border-dark-5">{i + 1}</td>
+                            <td className="w-40 p-4 border-b-2 dark:border-dark-5 min-w-min">
                                 <Button
                                     color='yellow'
                                     value={item.id}
@@ -52,22 +52,22 @@ function TableList({ data, ...props }) {
                                     Detail
                                 </Button>
                             </td>
-                            <td className="border-b-2 p-4 dark:border-dark-5 min-w-min w-40">
+                            <td className="w-40 p-4 border-b-2 dark:border-dark-5 min-w-min">
                                 {item.name}
                             </td>
-                            <td className="border-b-2 p-4 dark:border-dark-5">
+                            <td className="p-4 border-b-2 dark:border-dark-5">
                                 {item.username}
                             </td>
-                            <td className="border-b-2 p-4 dark:border-dark-5">
+                            <td className="p-4 border-b-2 dark:border-dark-5">
                                 {item.email}
                             </td>
-                            <td className="border-b-2 p-4 dark:border-dark-5 ">
+                            <td className="p-4 border-b-2 dark:border-dark-5 ">
                                 {item.phone}
                             </td>
-                            <td className="border-b-2 p-4 dark:border-dark-5">
+                            <td className="p-4 border-b-2 dark:border-dark-5">
                                 {item.website}
                             </td>
-                            <td className="border-b-2 p-4 dark:border-dark-5">
+                            <td className="p-4 border-b-2 dark:border-dark-5">
                                 {item.company.name}
                             </td>
                         </tr>

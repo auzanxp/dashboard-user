@@ -5,13 +5,13 @@ import Button from '../elements/Button';
 
 function Home() {
     return (
-        <section className="dark:bg-gradient-to-tr dark:from-gray-900 dark:to-slate-800 min-h-screen relative space-y-4 md:space-y-0 pb-20">
-            <div className="container-fluid dark:text-gray-100 flex flex-col-reverse md:flex-row justify-center items-center min-h-fit md:min-h-screen md:gap-x-2 relative z-30">
-                <div className="w-full md:w-2/5 space-y-6 relative flex flex-col items-center justify-center md:block ">
-                    <h1 className="drop-shadow-lg text-gray-800 text-3xl md:text-5xl font-semibold tracking-wide dark:text-gray-100 text-center md:text-left md:leading-normal">
+        <section className="relative min-h-screen pb-20 space-y-4 dark:bg-gradient-to-tr dark:from-gray-900 dark:to-slate-800 md:space-y-0">
+            <div className="relative z-30 flex flex-col-reverse items-center justify-center min-h-screen container-fluid dark:text-gray-100 md:flex-row md:gap-x-2">
+                <div className="relative flex flex-col items-center justify-center w-full p-4 space-y-6 md:w-2/5 md:block ">
+                    <h1 className="text-3xl font-semibold tracking-wide text-center text-gray-800 drop-shadow-lg md:text-5xl dark:text-gray-100 md:text-left md:leading-normal">
                         Beranda Solubis
                     </h1>
-                    <p className="text-xs md:text-sm font-light text-gray-800 dark:text-gray-100 tracking-wide drop-shadow-lg md:text-left text-center">
+                    <p className="text-xs font-light tracking-wide text-center text-gray-800 md:text-sm dark:text-gray-100 drop-shadow-lg md:text-left">
                         We are trusted for by millions of people to find user to build their
                         dream and goals quickly and well by several famous companies
                     </p>
@@ -22,7 +22,7 @@ function Home() {
                 </div>
             </div>
 
-            <div className="absolute top-96 w-full z-10 ">
+            <div className="absolute z-10 w-full top-96 ">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     version="1.1"

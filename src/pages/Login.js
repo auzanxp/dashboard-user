@@ -87,7 +87,7 @@ export default function Login() {
 
     return (
         <div className="relative flex items-center justify-center min-h-screen dark:bg-gradient-to-tr dark:from-gray-900 dark:to-slate-800">
-            <div className="w-full px-4 py-4 text-gray-100 bg-gray-100 rounded-lg shadow-md sm:w-2/4 lg:w-1/3 dark:bg-slate-800">
+            <div className="px-4 py-4 text-gray-100 bg-gray-100 rounded-lg shadow-md  sm:w-2/4 lg:w-1/3 dark:bg-slate-800">
                 <div className="mb-5 text-2xl font-medium text-center border-b text-slate-900 dark:text-gray-100">
                     Login
                 </div>
