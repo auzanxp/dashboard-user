@@ -67,11 +67,7 @@ export default function Login() {
         }
         setInput(initInput);
         setTimeout(() => {
-            setAppearAlert({
-                appear: false,
-                type: '',
-                message: '',
-            });
+            setAppearAlert(initStateAlert)
         }, 30000);
     };
 
