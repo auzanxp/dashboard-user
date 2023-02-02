@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Cookies from 'js-cookie';
 import axios from 'axios';
@@ -9,6 +9,9 @@ import Label from '../elements/Label';
 import Alert from '../elements//Alert';
 
 const initInput = {
+    device_type: "WEB",
+    device_model: "WEB",
+    device_id: 123,
     userid: '',
     password: ''
 };
@@ -32,14 +35,9 @@ export default function Login() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setIsLoading(true)
-        const payload = {
-            device_type: "WEB",
-            device_model: "WEB",
-            device_id: 123
-        }
         try {
             const { data } = await axios.post(`${config.api_host}/login`,
-                { ...payload, ...input },
+                { ...input },
                 {
                     headers: {
                         Accept: "*/*",
@@ -68,14 +66,6 @@ export default function Login() {
             });
         }
         setInput(initInput);
-    };
-
-    const handleChange = (e) => {
-        let { name, value } = e.target;
-        setInput({ ...input, [name]: value });
-    };
-
-    useEffect(() => {
         setTimeout(() => {
             setAppearAlert({
                 appear: false,
@@ -83,7 +73,12 @@ export default function Login() {
                 message: '',
             });
         }, 30000);
-    }, [isLoading]);
+    };
+
+    const handleChange = (e) => {
+        let { name, value } = e.target;
+        setInput({ ...input, [name]: value });
+    };
 
     return (
         <div className="relative flex items-center justify-center min-h-screen dark:bg-gradient-to-tr dark:from-gray-900 dark:to-slate-800">
