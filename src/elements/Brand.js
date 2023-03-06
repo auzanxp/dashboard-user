@@ -46,7 +46,7 @@ export default function Brand({ isSmall }) {
                     }drop-shadow-lg font-bold  uppercase tracking-wider transition duration-500 ${animate.brand ? 'text-amber-400' : 'text-gray-800 dark:text-gray-100'
                     }`}
             >
-                Solubis
+                Dashboard
             </h2>
         </Link>
     );

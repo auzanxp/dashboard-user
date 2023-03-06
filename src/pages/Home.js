@@ -9,7 +9,7 @@ function Home() {
             <div className="relative z-30 flex flex-col-reverse items-center justify-center min-h-screen container-fluid dark:text-gray-100 md:flex-row md:gap-x-2">
                 <div className="relative flex flex-col items-center justify-center w-full p-4 space-y-6 md:w-2/5 md:block ">
                     <h1 className="text-3xl font-semibold tracking-wide text-center text-gray-800 drop-shadow-lg md:text-5xl dark:text-gray-100 md:text-left md:leading-normal">
-                        Beranda Solubis
+                        Beranda
                     </h1>
                     <p className="text-xs font-light tracking-wide text-center text-gray-800 md:text-sm dark:text-gray-100 drop-shadow-lg md:text-left">
                         We are trusted for by millions of people to find user to build their
