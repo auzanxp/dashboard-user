@@ -9,7 +9,9 @@ export const useAppStore = create((set) => ({
     },
     decrease: () => {
         set((state) => ({
-            count: state.count -1,
+            count: state.count - 1,
         }))
-    }
+    },
+    username: '',
+    updateUsername: (username) => set({ username }),
 }))
